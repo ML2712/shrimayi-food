@@ -473,7 +473,6 @@ lottie-player {
     color: #eeb952;
     font-size: 52px;
     text-align: center;
-    /* background: linear-gradient(rgba(22, 21, 20, 0), rgba(0, 0, 0, 0.5)) transparent; */
     margin: 10px 0 20px;
 }
 
@@ -481,7 +480,7 @@ lottie-player {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
-    margin: 10% 0;
+    margin: 10% 0 3%;
     text-align: center;
 }
 
@@ -495,6 +494,7 @@ lottie-player {
     font-size: 30px;
 }
 
+
 .pricing-grid h4,
 .pricing-grid p {
     font-family: var(--paragraph);
@@ -502,7 +502,7 @@ lottie-player {
     line-height: 24px;
     letter-spacing: 0.2rem;
     margin: 30px 0;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -523,7 +523,7 @@ lottie-player {
 
 .category-2 {
     background-color: rgba(238, 186, 82, 0.26);
-    padding: 50px 40px;
+    padding: 50px 30px;
     border: dashed;
     border-width: 2px 4px;
     border-radius: 40px;
@@ -534,7 +534,7 @@ lottie-player {
 .category-1>div,
 .category-2>div,
 .category-3>div {
-    margin: 30% 0;
+    margin: 30% 0 0;
 }
 
 .category-1 ul li,
@@ -556,4 +556,60 @@ lottie-player {
 
 .check {
     color: #467bfb;
+}
+
+.btn-daily {
+    background-color: #467bfb;
+}
+
+span {
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+    font-family: var(--sub-head);
+}
+
+/* ************************** */
+/* CHEF SECTION */
+/* ************************** */
+
+.chef-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 10% 0 3%;
+}
+
+.chef-content {
+    padding: 20px;
+}
+
+.chef-grid>div h2 {
+    font-size: 52px;
+    color: #234386;
+    margin: 0 0 20px;
+}
+
+.chef-grid>div p {
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin: 40px 0 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.chef-grid>div ul {
+    margin-top: 20%;
+}
+
+.chef-grid>div ul li {
+    font-family: var(--sub-head);
+    font-size: 18px;
+    letter-spacing: 0.07rem;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.chef-grid>div img {
+    height: 400px;
 }
