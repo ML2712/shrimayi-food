@@ -14,6 +14,11 @@
         sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 ::selection {
     background: #eeb952;
     text-shadow: none;
@@ -401,6 +406,25 @@ lottie-player {
 }
 
 
+.bg2-ele {
+    position: absolute;
+    background: url('/img/bg/Plant04.png') no-repeat center center/contain;
+    top: 30%;
+    left: -25%;
+    height: 480px;
+    width: 350px;
+}
+
+.bg4-ele {
+    position: absolute;
+    background: url('/img/bg/bowl-flip.png') no-repeat center center/contain;
+    height: 720px;
+    width: 800px;
+    bottom: -27%;
+    right: -39%;
+    mix-blend-mode: overlay;
+}
+
 /* ************************** */
 /* ABOUT SECTION */
 /* ************************** */
@@ -411,6 +435,16 @@ lottie-player {
     margin: 10px 0 20px;
     text-align: center;
     /* letter-spacing: 0.2rem; */
+}
+
+.bg3-ele {
+    position: absolute;
+    background: url('/img/bg/nut-1.png') no-repeat center center/contain;
+    height: 70px;
+    width: 70px;
+    top: 80%;
+    left: 45%;
+    transform: rotate(100deg);
 }
 
 .about-grid {
@@ -470,7 +504,7 @@ lottie-player {
 }
 
 #price h2 {
-    color: #eeb952;
+    color: #fff;
     font-size: 52px;
     text-align: center;
     margin: 10px 0 20px;
@@ -572,15 +606,28 @@ span {
 /* CHEF SECTION */
 /* ************************** */
 
+#chef {
+    position: relative;
+}
+
+.bg5-ele {
+    position: absolute;
+    background: url('/img/bg/chef.png') no-repeat center center/cover;
+    height: 100%;
+    width: 400px;
+    top: 30%;
+    left: -17%;
+    transform: rotate(-10deg);
+}
+
 .chef-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    margin: 10% 0 3%;
 }
 
 .chef-content {
-    padding: 20px;
+    background-color: #f1f1f7;
+    padding: 10% 15%;
 }
 
 .chef-grid>div h2 {
@@ -596,6 +643,7 @@ span {
     margin: 40px 0 20px;
     font-size: 18px;
     text-align: justify;
+    z-index: 99;
 }
 
 .chef-grid>div ul {
@@ -610,6 +658,199 @@ span {
     margin: 10px;
 }
 
-.chef-grid>div img {
-    height: 400px;
+.chef-img {
+    background: url('/img/chef/chef.jpg')no-repeat center center/cover;
+}
+
+/* ************************** */
+/* CONTACT SECTION */
+/* ************************** */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.contact-content {
+    padding: 10px 0px;
+}
+
+.contact-content h2 {
+    font-size: 32px;
+    margin: 30px 0;
+    color: #234386;
+    letter-spacing: 0.1rem;
+}
+
+.contact-content h3 {
+    font-family: var(--sub-head);
+    margin: 20px 0;
+    color: #e95950;
+}
+
+.contact-content h5 {
+    font-family: var(--paragraph);
+    font-size: 20px;
+    margin: 10% 0 20%;
+    color: #aaa;
+}
+
+.contact-content a {
+    font-family: var(--sub-head);
+    color: #aaa;
+    font-weight: 100;
+    letter-spacing: 0.07rem;
+    margin: 10px 0 0 15px;
+}
+
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 20px 0;
+}
+
+input {
+    height: 40px;
+    border: none;
+    background-color: rgba(204, 204, 204, 0.671);
+    padding: 10px;
+    color: #234386;
+    margin: 0 0 20px;
+    border-bottom: 2px solid rgb(102, 102, 102);
+    font-family: var(--sub-head);
+}
+
+input::placeholder,
+textarea::placeholder {
+    /* color: #234386; */
+    font-family: var(--sub-head);
+    letter-spacing: 0.05rem;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+}
+
+textarea {
+    background-color: rgba(204, 204, 204, 0.671);
+    padding: 10px;
+    color: #234386;
+    margin: 0 0 20px;
+    border: none;
+    resize: none
+}
+
+input[type="submit"] {
+    color: #fff;
+}
+
+
+.bg6-ele {
+    position: absolute;
+    background: url('/img/bg/Plant03.png') no-repeat center center/contain;
+    height: 100%;
+    width: 350px;
+    top: 50%;
+    right: -20%;
+    /* transform: rotate(0deg); */
+}
+
+/* ************************** */
+/* FOOTER */
+/* ************************** */
+
+footer {
+    background: linear-gradient(rgba(22, 21, 21, 0.705), rgba(39, 27, 10, 0.5)), url('/img/footer.jpg')no-repeat center center/cover;
+    height: 100%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 8% 0;
+}
+
+.footer-logo {
+    background: url('/img/final_logo.png')no-repeat center center/contain;
+}
+
+.footer-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-call h2 {
+    color: #f3f3f3;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 20%;
+    /* letter-spacing: 0.05rem; */
+}
+
+.footer-call h4 {
+    font-family: var(--paragraph);
+    color: #f4f4f4;
+    line-height: 30px;
+    letter-spacing: 0.2rem;
+    margin: 10% 0;
+}
+
+.footer-call a {
+    font-family: var(--sub-head);
+    color: #eeb952;
+    font-size: 28px;
+    letter-spacing: 0.2rem;
+}
+
+.social-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-link a {
+    padding: 10px;
+    font-size: 24px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    color: #234386;
+}
+
+.fa-facebook:hover {
+    color: #467bfb;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.footer-copyright {
+    background-color: rgba(85, 85, 85, 0.479);
+    padding: 20px;
+}
+
+.footer-copyright h4 {
+    font-family: var(--paragraph);
+    text-align: center;
+    color: #f2f2f8;
+    font-weight: 100;
+    letter-spacing: 0.08rem;
 }

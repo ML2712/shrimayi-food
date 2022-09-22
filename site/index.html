@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/final_logo.png">
 </head>
 
 <body>
@@ -24,25 +25,25 @@
                         <a href="" class="center">Home</a>
                     </li>
                     <li id="nav-2" class="slide-out-2 center">
-                        <a href="" class="center">Kitchen</a>
+                        <a href="#kitchen-section" class="center">Kitchen</a>
                     </li>
                     <li id="nav-3" class="slide-out-3 center">
-                        <a href="" class="center">About</a>
+                        <a href="#about-section" class="center">About</a>
                     </li>
                     <li id="nav-4" class="slide-out-4 center">
                         <a href="" class="center">Offer</a>
                     </li>
                     <li id="nav-5" class="slide-out-5 center">
-                        <a href="" class="center">Prices</a>
+                        <a href="#price" class="center">Prices</a>
                     </li>
                     <li id="nav-6" class="slide-out-6 center">
-                        <a href="" class="center">Chef</a>
+                        <a href="#chef" class="center">Chef</a>
                     </li>
                     <li id="nav-7" class="slide-out-7 center">
                         <a href="" class="center">Gallery</a>
                     </li>
                     <li id="nav-8" class="slide-out-8 center">
-                        <a href="" class="center">Contact</a>
+                        <a href="#contact" class="center">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -78,6 +79,7 @@
 
         <div class="seed-ele"></div>
 
+        <div class="bg2-ele"></div>
         <div class="kitchen-grid">
             <div>
                 <img src="/img/food/mexican_png.png" alt="">
@@ -113,6 +115,8 @@
             </div>
         </div>
 
+        <div class="bg4-ele"></div>
+
         <div class="btn btn-kitchen">
             <a href="#about-section">Who are we?</a>
         </div>
@@ -122,9 +126,12 @@
     <!-- ABOUT US SECTION -->
     <section id="about-section">
         <h2>Get to know us</h2>
+
+        <div class="bg3-ele"></div>
+
         <div class="about-grid">
             <div class="box-1">
-                <img src="/img/about/about-chopping2.png" alt="">
+                <img src="/img/about/about-img.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati qui ut? Quas accusantium
                     voluptatum quaerat rerum. Rerum, neque! Incidunt id aspernatur officiis ipsa quisquam, tempora
                     doloremque possimus earum officia dicta omnis voluptates, at dolor, iste deleniti assumenda.
@@ -143,7 +150,7 @@
                     <li><i class="fa-regular fa-circle-check"></i> Lorem ipsum dolor sit amet.</li>
                     <li><i class="fa-regular fa-circle-check"></i> Lorem ipsum dolor sit amet.</li>
                 </ul>
-                <img src="/img/about/about-img2.jpg" alt="">
+                <img src="/img/about/about-img22.jpg" alt="">
             </div>
         </div>
     </section>
@@ -207,10 +214,13 @@
 
 
     <!-- CHEF SECTION -->
-    <section id="chef">
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jBvjF3.json" background="transparent" speed="1"
+        style="width: 450px; height: 400px;" loop autoplay></lottie-player>
+    <div id="chef">
+        <div class="bg5-ele"></div>
         <div class="chef-grid">
             <div class="chef-content">
-                <h2>A few words about our chef</h2>
+                <h2>A few words about our chef's</h2>
                 <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat,
                     fringilla vel purus sit
                     amet, mattis porta enim. Duis fermentum faucibus est, sed vehicula velit sodales vitae. Mauris
@@ -220,12 +230,64 @@
                     <li><i class="fa-regular fa-circle-check"></i> Lorem ipsum dolor sit amet.</li>
                 </ul>
             </div>
+            <div class="chef-img"></div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-grid">
+            <div class="contact-content">
+                <h2>Contact us via phone, mail or social media</h2>
+                <h5>
+                    Level 13, 2 Elizabeth St,<br>
+                    Melbourne, Victoria 3000,<br>
+                    Australia
+                </h5>
+                <h3><i class="fa-solid fa-phone"></i><a href="">+91 85955-09422</a>
+                </h3>
+                <h3>
+                    <i class="fa-solid fa-envelope"></i><a href=""> info@shrimayikitchen.in</a>
+                </h3>
+            </div>
             <div>
-                <img src="/img/chef/1.jpg" alt="">
-                <!-- <img src="/img/chef/2.jpg" alt=""> -->
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your e-mail" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <input class="btn" type="submit" value="SEND A MESSAGE">
+                </form>
             </div>
         </div>
+        <div class="bg6-ele"></div>
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <section>
+
+            <div class="footer-grid">
+                <div class="footer-logo"></div>
+                <div class="footer-call">
+                    <div>
+                        <h2>We are open 7 days a week 9:00 - 20:30</h2>
+                    </div>
+                    <div>
+                        <h4>Need help? Call us</h4>
+                        <a href="">+91 85955-09422</a>
+                    </div>
+                </div>
+                <div class="social-link">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="footer-copyright">
+            <h4>&copy;2022-23 Shrimayi Kitchen by Shubhi Enterprises | Developed by ML | All Rights Reserved</h4>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./script.js"></script>
