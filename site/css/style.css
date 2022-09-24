@@ -336,7 +336,7 @@ blockquote q span {
 /* ************************** */
 
 section {
-    padding: 120px 40px;
+    padding: 180px 40px;
     margin: 0 10%;
     position: relative;
 }
@@ -344,6 +344,8 @@ section {
 lottie-player {
     display: block;
     margin: 0 auto 40px;
+    width: 450px;
+    height: 320px;
 }
 
 .kitchen h2 {
@@ -430,7 +432,7 @@ lottie-player {
 .bg2-ele {
     position: absolute;
     background: url('/img/bg/Plant04.png') no-repeat center center/contain;
-    top: 30%;
+    top: 10%;
     left: -25%;
     height: 480px;
     width: 350px;
@@ -438,12 +440,12 @@ lottie-player {
 
 .bg4-ele {
     position: absolute;
-    background: url('/img/bg/bowl-flip.png') no-repeat center center/contain;
-    height: 720px;
+    background: url('/img/bg/bowl-1.png') no-repeat center center/contain;
+    height: 700px;
     width: 800px;
-    bottom: -27%;
-    right: -39%;
-    mix-blend-mode: overlay;
+    bottom: -18%;
+    left: -39%;
+    /* mix-blend-mode: overlay; */
 }
 
 /* ************************** */
@@ -641,9 +643,9 @@ span {
     height: 100%;
     width: 400px;
     top: 30%;
+    mix-blend-mode: darken;
     left: -17%;
     transform: rotate(-10deg);
-
 }
 
 .chef-grid {
@@ -883,4 +885,123 @@ footer {
     color: #f2f2f8;
     font-weight: 100;
     letter-spacing: 0.08rem;
+}
+
+
+/* ************************** */
+/* MOBILE RESPONSIVE */
+/* ************************** */
+
+@media only screen and (max-width: 1080px) {
+    nav li a {
+        font-size: 1.5rem;
+    }
+
+    blockquote {
+        font-size: 47px;
+        width: 756px;
+    }
+
+    .content p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    section {
+        padding: 154px 40px;
+        margin: 0 7%;
+    }
+
+    .seed-ele {
+        top: 38%;
+        right: 0;
+        height: 93px;
+    }
+
+    .bg2-ele {
+        left: -32%;
+    }
+
+    .kitchen-grid>div p {
+        line-height: 20px;
+    }
+
+    lottie-player {
+        width: 400px;
+    }
+
+    .bg4-ele {
+        height: 600px;
+        left: -49%;
+    }
+
+    .box-2 h3 {
+        font-size: 20px;
+    }
+
+    .box-1 img {
+        height: 370px;
+    }
+
+    .box-2 img {
+        height: 325px;
+    }
+
+    .category-1,
+    .category-3 {
+        padding: 35px 18px;
+    }
+
+    .category-2 {
+        padding: 40px 18px;
+    }
+
+    .btn-daily,
+    .btn-meal {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .category-1>div,
+    .category-2>div,
+    .category-3>div {
+        margin: 30% auto 0;
+    }
+
+    .pricing-grid h3 {
+        font-size: 24px;
+    }
+
+    .pricing-grid p {
+        font-size: 13px;
+    }
+
+    .btn a {
+        font-size: 14px;
+    }
+
+    .chef-grid>div h2 {
+        font-size: 46px;
+    }
+
+
+    .chef-content {
+        padding: 10% 12%;
+    }
+
+    .bg5-ele {
+        left: -23%;
+    }
+
+    .footer-grid {
+        grid-gap: 1rem;
+    }
+
+    .footer-call h2 {
+        font-size: 26px;
+    }
+
+    .footer-call a {
+        font-size: 20px;
+    }
 }
