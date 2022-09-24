@@ -291,17 +291,38 @@ header {
     text-align: center;
 }
 
-.content h1 {
+/* .content h1 {
     display: block;
     margin: 17% auto 0;
     font-size: 65px;
     width: 850px;
     color: #eeb952;
+} */
+
+blockquote {
+    font-size: 60px;
+    margin: 17% auto 0;
+    width: 850px;
 }
+
+blockquote q {
+    font-family: var(--heading);
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: #eeb952;
+}
+
+blockquote q span {
+    will-change: opacity, filter;
+    opacity: 0;
+    filter: blur(0px);
+    font-family: var(--heading);
+    color: #eeb952;
+}
+
 
 .content p {
     margin: 4% 0 10%;
-
     color: aliceblue;
     font-size: 17px;
     width: 500px;
@@ -499,6 +520,10 @@ lottie-player {
 
 .price-bg {
     background: linear-gradient(rgba(22, 21, 21, 0.705), rgba(0, 0, 0, 0.5)), url('/img/price/price-header.jpg')no-repeat center center/cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
 }
@@ -618,6 +643,7 @@ span {
     top: 30%;
     left: -17%;
     transform: rotate(-10deg);
+
 }
 
 .chef-grid {
@@ -772,6 +798,10 @@ input[type="submit"] {
 footer {
     background: linear-gradient(rgba(22, 21, 21, 0.705), rgba(39, 27, 10, 0.5)), url('/img/footer.jpg')no-repeat center center/cover;
     height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-grid {
