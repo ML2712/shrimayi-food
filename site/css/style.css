@@ -277,13 +277,11 @@ nav li a:hover:after {
 
 header {
     background: linear-gradient(rgba(22, 21, 21, 0.6), rgba(0, 0, 0, 0)), url('/img/header.jpg')no-repeat center center/cover;
-    height: 100%;
+    height: 110vh;
     width: 100%;
 }
 
 .content {
-    /* position: absolute; */
-    /* /* left: 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,7 +455,7 @@ lottie-player {
     font-size: 52px;
     margin: 10px 0 20px;
     text-align: center;
-    /* letter-spacing: 0.2rem; */
+    letter-spacing: 0.1rem;
 }
 
 .bg3-ele {
@@ -686,8 +684,14 @@ span {
     margin: 10px;
 }
 
+.chef-lottie-player {
+    width: 450px;
+    height: 400px;
+}
+
 .chef-img {
     background: url('/img/chef/chef.jpg')no-repeat center center/cover;
+    height: 100%;
 }
 
 /* ************************** */
@@ -808,7 +812,7 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 2rem;
     margin: 8% 0;
 }
@@ -1003,5 +1007,265 @@ footer {
 
     .footer-call a {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    blockquote {
+        font-size: 38px;
+        width: 585px;
+        margin: 29% auto 0;
+    }
+
+    .content p {
+        margin-top: 8%;
+    }
+
+    .seed-ele {
+        top: 32%;
+        left: 86%;
+        height: 72px;
+    }
+
+    .kitchen h2 {
+        font-size: 36px;
+    }
+
+    .kitchen-grid>div img {
+        height: 195px;
+    }
+
+    .bg2-ele {
+        height: 300px;
+        top: 14%;
+        left: -35%;
+    }
+
+    section {
+        padding: 130px 34px;
+        margin: 0 5%;
+    }
+
+    .kitchen-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bg4-ele {
+        height: 500px;
+        width: 500px;
+        left: -35%;
+        bottom: -14%;
+    }
+
+    #about-section h2 {
+        font-size: 40px;
+    }
+
+    .about-grid {
+        grid-gap: 1.2rem;
+    }
+
+    .box-1 img {
+        height: 290px;
+    }
+
+    .box-2 h3 {
+        font-size: 16px;
+    }
+
+    .box-2 ul li {
+        font-size: 13px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .category-1,
+    .category-2,
+    .category-3 {
+        grid-column: span 2;
+    }
+
+    .category-3 {
+        grid-column: 2 / span 2;
+    }
+
+    .chef-content {
+        padding: 10% 8%;
+    }
+
+    .bg5-ele {
+        left: -34%;
+    }
+
+    .chef-grid>div h2 {
+        font-size: 38px;
+    }
+
+    .chef-grid>div ul li,
+    .chef-grid>div p {
+        font-size: 16px;
+    }
+
+    .contact-content h5,
+    .contact-content a {
+        font-size: 18px;
+    }
+
+    .social-link {
+        flex-direction: column;
+    }
+
+    .footer-copyright h4 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logo img {
+        height: 60px;
+    }
+
+    .hamburger-menu {
+        top: 0.5rem;
+        right: 1.3rem;
+    }
+
+    /* .active .menu-bar1 { */
+    /* transform: rotate(); */
+    /* } */
+
+
+    .active .menu-bar1 {
+        transform: rotate(-46deg) translate(-0.5rem, 0.7rem);
+    }
+
+    .active .menu-bar3 {
+        transform: rotate(43deg) translate(-0.6rem, -0.8rem);
+    }
+
+    .menu-bar1,
+    .menu-bar2,
+    .menu-bar3 {
+        height: 0.09rem;
+    }
+
+    blockquote {
+        width: 375px;
+        font-size: 26px;
+        margin-top: 50%;
+    }
+
+    .content p {
+        width: 300px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    section {
+        padding: 75px 20px;
+    }
+
+    lottie-player {
+        width: 300px;
+    }
+
+    .bg2-ele {
+        height: 190px;
+        left: -56%;
+    }
+
+    .seed-ele {
+        width: 70px;
+        top: 31%;
+        left: 85%;
+    }
+
+    .kitchen h2 {
+        font-size: 20px;
+        width: 300px;
+        line-height: 29px;
+    }
+
+    .kitchen-grid>div img {
+        height: 150px;
+    }
+
+    .bg4-ele {
+        height: 350px;
+        width: 340px;
+        left: -45%;
+        bottom: -12%;
+        mix-blend-mode: darken;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #about-section h2 {
+        font-size: 32px;
+    }
+
+    .box-1 img {
+        display: block;
+        margin: 5% auto;
+        width: 300px;
+    }
+
+    .box-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-3 {
+        grid-column: 1 / span 2;
+    }
+
+    .pricing-grid h3 {
+        width: 146px;
+        margin: 0 auto;
+        padding: 15px;
+        font-size: 22px;
+    }
+
+    .pricing-grid h4 {
+        font-size: 18px;
+    }
+
+    .category-1>div,
+    .category-2>div,
+    .category-3>div {
+        margin: 20% auto 0;
+    }
+
+    .chef-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .chef-img {
+        background: url('/img/chef/chef.jpg')no-repeat center center/cover;
+        height: 100vh;
+    }
+
+    .chef-lottie-player {
+        width: 350px;
+    }
+
+    .bg5-ele {
+        height: 425px;
+        width: 320px;
+        top: 15%;
+        left: -44%;
+        transform: rotate(-13deg);
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
