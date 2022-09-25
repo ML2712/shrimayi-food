@@ -897,6 +897,10 @@ footer {
 /* ************************** */
 
 @media only screen and (max-width: 1080px) {
+    header {
+        height: 100%;
+    }
+
     nav li a {
         font-size: 1.5rem;
     }
@@ -1132,11 +1136,6 @@ footer {
         right: 1.3rem;
     }
 
-    /* .active .menu-bar1 { */
-    /* transform: rotate(); */
-    /* } */
-
-
     .active .menu-bar1 {
         transform: rotate(-46deg) translate(-0.5rem, 0.7rem);
     }
@@ -1148,7 +1147,12 @@ footer {
     .menu-bar1,
     .menu-bar2,
     .menu-bar3 {
-        height: 0.09rem;
+        height: 0.07rem;
+    }
+
+    .menu-bar1,
+    .menu-bar3 {
+        width: 3.1rem;
     }
 
     blockquote {
@@ -1161,6 +1165,7 @@ footer {
         width: 300px;
         font-size: 13px;
         line-height: 16px;
+        margin: 15% 0 20%;
     }
 
     section {
@@ -1183,13 +1188,17 @@ footer {
     }
 
     .kitchen h2 {
-        font-size: 20px;
-        width: 300px;
+        font-size: 28px;
+        width: 315px;
         line-height: 29px;
     }
 
     .kitchen-grid>div img {
         height: 150px;
+    }
+
+    .kitchen-grid>div p {
+        font-size: 14.5px;
     }
 
     .bg4-ele {
@@ -1219,8 +1228,22 @@ footer {
         flex-direction: column-reverse;
     }
 
+    .box-1 p,
+    .box-2 h3 {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .box-2 ul li {
+        text-align: center;
+    }
+
     .pricing-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #price h2 {
+        font-size: 30px;
     }
 
     .category-3 {
@@ -1267,5 +1290,77 @@ footer {
 
     .contact-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin: 3%;
+    }
+
+    .footer-call h2 {
+        font-size: 25px;
+    }
+
+    .footer-logo {
+        height: 100px;
+    }
+
+    .social-link {
+        flex-direction: row;
+        margin: 20px 0 0;
+    }
+
+    .footer-copyright h4 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    blockquote {
+        width: 330px;
+        font-size: 28px;
+    }
+
+    .kitchen h2 {
+        font-size: 25px;
+    }
+
+    .bg2-ele {
+        left: -64%;
+        top: 15%;
+    }
+
+    .kitchen-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bg4-ele {
+        width: 330px;
+        bottom: -7.5%;
+        left: -52%;
+    }
+
+    .chef-lottie-player {
+        width: 330px;
+    }
+
+    .chef-content {
+        padding: 8% 5%;
+    }
+
+    .chef-grid>div h2 {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .bg5-ele {
+        width: 310px;
+        left: -52%;
+    }
+
+    .contact-content h5,
+    .contact-content a {
+        font-size: 15px;
     }
 }
